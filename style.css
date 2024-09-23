@@ -1,0 +1,150 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+  overflow: hidden; /* 隐藏任何滚动条，确保页面无法滚动 */
+}
+
+.Container {
+  display: flex;
+  width: 100vw;
+  height: 100vw;
+  justify-content: center;
+  font-family: "Roboto", sans-serif;
+}
+
+.picture_section {
+  width: 40vw;
+  background-image: url(./Img/ali-kazal-Wk53M_jU_0w-unsplash.jpg);
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.picture_section > div {
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.527);
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 20px;
+  font-family: "Oswald", sans-serif;
+  letter-spacing: 2px;
+  gap: 8px;
+}
+
+.picture_section img {
+  width: 5rem;
+}
+
+.form_section {
+  width: 60vw;
+  height: 100vh;
+  display: flex;
+  background-color: rgb(244, 255, 236);
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  gap: 30px;
+}
+
+.input-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: white;
+  width: 60vw;
+  padding: 15px 10px;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.123);
+  font-family: "Arvo", serif;
+  letter-spacing: 0.5px;
+}
+
+.header,
+.submit-section {
+  padding: 5px 10px;
+}
+
+.header {
+  font-family: "Oswald", sans-serif;
+  font-size: 35px;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+}
+
+form {
+  display: flex;
+  flex-flow: row wrap;
+  width: 60vw;
+  gap: 1rem;
+  font-size: 1rem;
+}
+
+label {
+  display: flex;
+  flex-direction: column; /* 文字在上，输入框在下 */
+  width: 15rem;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(104, 223, 225);
+}
+
+button[type="submit"] {
+  background-color: #4caf50; /* 按钮背景颜色 */
+  color: white; /* 字体颜色 */
+  padding: 15px 20px; /* 内边距，增加按钮大小 */
+  font-size: 1rem; /* 字体大小 */
+  border: none; /* 去除边框 */
+  border-radius: 5px; /* 圆角 */
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2); /* 按钮阴影 */
+  cursor: pointer; /* 鼠标悬停样式 */
+  transition: background-color 0.3s ease, transform 0.3s ease; /* 过渡效果 */
+}
+
+button[type="submit"]:hover {
+  background-color: #45a049; /* 悬停时的背景颜色变化 */
+  transform: translateY(-3px); /* 鼠标悬停时的按钮稍微上移 */
+}
+
+button[type="submit"]:active {
+  background-color: #388e3c; /* 点击时的背景颜色变化 */
+  transform: translateY(1px); /* 按下时的按钮稍微下沉 */
+}
+
+input {
+  padding: 10px; /* 内边距 */
+  border: 1px solid #ccc; /* 边框颜色 */
+  border-radius: 5px; /* 圆角 */
+  font-size: 14px; /* 字体大小 */
+  transition: border-color 0.3s; /* 边框颜色变化过渡 */
+}
+
+input:focus {
+  border-color: #1bff02; /* 聚焦时的边框颜色 */
+  outline: none; /* 去掉默认的聚焦外边框 */
+}
+
+input:invalid:focus {
+  border: 2px solid rgb(255, 69, 100);
+}
+
+/* 输入框获得焦点且有效时的样式 */
+input:focus:valid {
+  border: rgb(0, 183, 255) 2px solid;
+}
+
+.error {
+  font-family: "Arvo", serif;
+  font-size: 10px;
+  color: rgb(255, 69, 100);
+}
+
